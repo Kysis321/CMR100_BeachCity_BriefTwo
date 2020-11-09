@@ -11,6 +11,7 @@ public class GemScript : MonoBehaviour
     private Vector3 posA;
     private Vector3 nextPos;
     public float Speed;
+    public float ySpeed;
 
     [SerializeField]
     private Transform gemTransform;
@@ -20,6 +21,8 @@ public class GemScript : MonoBehaviour
     private Transform gemBot;
     [SerializeField]
     private Transform gemSpin;
+
+  
 
 
 
@@ -35,10 +38,10 @@ public class GemScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() 
     {
         GemMovement();
-        gemSpin.Rotate(Vector3.up, 10f);
+        
         
 
     }
@@ -46,7 +49,7 @@ public class GemScript : MonoBehaviour
     public void GemMovement()
     {
         gemTransform.position = Vector3.MoveTowards(gemTransform.position, nextPos, Speed * Time.deltaTime);
-        if(Vector3.Distance(gemTransform.position,nextPos) <= 0.1)
+        if (Vector3.Distance(gemTransform.position, nextPos) <= 0.1)
         {
             ChangePos();
         }
