@@ -10,10 +10,12 @@ public class CanvasGemScript : MonoBehaviour
     private GameObject gem1, gem2, gem3, gem4; //the temp spheres to move to positions
     public GameObject gem;
     public float speed;
+    public float timeTaken = 6f;
+    public float timeMoved = 0f;
 
 
-    [SerializeField]
-    private Transform posStart;
+    
+    public Transform posStart;
 
 
 
@@ -29,6 +31,7 @@ public class CanvasGemScript : MonoBehaviour
         posTR = topRight.position;
 
         CanvasGem();
+      
 
     }
 
@@ -48,10 +51,30 @@ public class CanvasGemScript : MonoBehaviour
 
     private void GemMovment()
     {
-        gem1.transform.position = Vector3.MoveTowards(posStart.position, topLeft.position, speed * Time.deltaTime);
-    
-    
-    
+        if (timeMoved < 6f)
+        {
+            timeMoved += Time.deltaTime;
+            timeMoved = Mathf.Min(timeMoved, timeTaken);
+            gem1.transform.position = Vector3.MoveTowards(transform.position, posTL, timeMoved / timeTaken);
+        }
+        if (timeMoved < 100f)
+        {
+            timeMoved += Time.deltaTime;
+            timeMoved = Mathf.Min(timeMoved, timeTaken);
+            gem2.transform.position = Vector3.MoveTowards(transform.position, posTR, timeMoved / timeTaken);
+        }
+        if (timeMoved < 3f)
+        {
+            timeMoved += Time.deltaTime;
+            timeMoved = Mathf.Min(timeMoved, timeTaken);
+            gem3.transform.position = Vector3.MoveTowards(transform.position, posBL, timeMoved / timeTaken);
+        }
+        if (timeMoved < 3f)
+        {
+            timeMoved += Time.deltaTime;
+            timeMoved = Mathf.Min(timeMoved, timeTaken);
+            gem4.transform.position = Vector3.MoveTowards(transform.position, posBR, timeMoved / timeTaken);
+        }
     }
 
 
@@ -60,6 +83,6 @@ public class CanvasGemScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GemMovment(); 
+        GemMovment();
     }
 }

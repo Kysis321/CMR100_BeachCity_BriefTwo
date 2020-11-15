@@ -13,6 +13,7 @@ public class GemScript : MonoBehaviour
     public float Speed;
     public float ySpeed;
 
+
     [SerializeField]
     private Transform gemTransform;
     [SerializeField]
@@ -35,12 +36,16 @@ public class GemScript : MonoBehaviour
         posA = gemBot.position;
         posB = gemTop.position;
         nextPos = posB;
+
     }
 
     // Update is called once per frame
     void Update() 
     {
         GemMovement();
+
+     
+
         
         
 
@@ -54,6 +59,7 @@ public class GemScript : MonoBehaviour
             ChangePos();
         }
     }
+
     private void ChangePos()
     {
         nextPos = nextPos != posA ? posA : posB;
