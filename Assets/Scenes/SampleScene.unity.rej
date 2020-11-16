@@ -1,0 +1,80 @@
+diff a/Assets/Scenes/SampleScene.unity b/Assets/Scenes/SampleScene.unity	(rejected hunks)
+@@ -118,19 +118,76 @@
+     manualTileSize: 0
+     tileSize: 256
+     accuratePlacement: 0
+     debug:
+       m_Flags: 0
+   m_NavMeshData: {fileID: 0}
+---- !u!43 &207892729
++--- !u!1 &314621739
++GameObject:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  serializedVersion: 6
++  m_Component:
++  - component: {fileID: 314621741}
++  - component: {fileID: 314621740}
++  m_Layer: 0
++  m_Name: Rose Quartz Gem
++  m_TagString: Untagged
++  m_Icon: {fileID: 0}
++  m_NavMeshLayer: 0
++  m_StaticEditorFlags: 0
++  m_IsActive: 1
++--- !u!114 &314621740
++MonoBehaviour:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 314621739}
++  m_Enabled: 1
++  m_EditorHideFlags: 0
++  m_Script: {fileID: 11500000, guid: 684d1a6ff94fc4c49a7ed5e487005af0, type: 3}
++  m_Name: 
++  m_EditorClassIdentifier: 
++  gemObject: {fileID: 314621739}
++  ps: {fileID: 0}
++  xAngle: 0
++  yAngle: 0
++  zAngle: 0
++  Speed: 1
++  ySpeed: 10
++  gemTransform: {fileID: 891040177}
++  gemTop: {fileID: 943268601}
++  gemBot: {fileID: 773173252}
++  gemSpin: {fileID: 0}
++--- !u!4 &314621741
++Transform:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 314621739}
++  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
++  m_LocalPosition: {x: -0.37557, y: 0.015, z: 0.42034}
++  m_LocalScale: {x: 1, y: 1, z: 1}
++  m_Children:
++  - {fileID: 943268601}
++  - {fileID: 773173252}
++  - {fileID: 891040177}
++  m_Father: {fileID: 0}
++  m_RootOrder: 1
++  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
++--- !u!43 &483637688
+ Mesh:
+   m_ObjectHideFlags: 0
+   m_CorrespondingSourceObject: {fileID: 0}
+   m_PrefabInstance: {fileID: 0}
+   m_PrefabAsset: {fileID: 0}
+-  m_Name: ImageTargetMesh14650
++  m_Name: ImageTargetMesh14652
+   serializedVersion: 10
+   m_SubMeshes:
+   - serializedVersion: 2
+     firstByte: 0
+     indexCount: 6
+     topology: 0
