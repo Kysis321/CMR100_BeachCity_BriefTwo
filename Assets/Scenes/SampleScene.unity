@@ -121,70 +121,13 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &314621739
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 314621741}
-  - component: {fileID: 314621740}
-  m_Layer: 0
-  m_Name: Rose Quartz Gem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &314621740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 314621739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 684d1a6ff94fc4c49a7ed5e487005af0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gemObject: {fileID: 314621739}
-  ps: {fileID: 0}
-  xAngle: 0
-  yAngle: 0
-  zAngle: 0
-  Speed: 1
-  ySpeed: 10
-  gemTransform: {fileID: 891040177}
-  gemTop: {fileID: 943268601}
-  gemBot: {fileID: 773173252}
-  gemSpin: {fileID: 0}
---- !u!4 &314621741
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 314621739}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.37557, y: 0.015, z: 0.42034}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 943268601}
-  - {fileID: 773173252}
-  - {fileID: 891040177}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &483637688
+--- !u!43 &207892729
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh14652
+  m_Name: ImageTargetMesh14650
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -341,6 +284,63 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &314621739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 314621741}
+  - component: {fileID: 314621740}
+  m_Layer: 0
+  m_Name: Rose Quartz Gem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &314621740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314621739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 684d1a6ff94fc4c49a7ed5e487005af0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemObject: {fileID: 314621739}
+  ps: {fileID: 0}
+  xAngle: 0
+  yAngle: 0
+  zAngle: 0
+  Speed: 1
+  ySpeed: 10
+  gemTransform: {fileID: 891040177}
+  gemTop: {fileID: 943268601}
+  gemBot: {fileID: 773173252}
+  gemSpin: {fileID: 0}
+--- !u!4 &314621741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314621739}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.37557, y: 0.015, z: 0.42034}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 943268601}
+  - {fileID: 773173252}
+  - {fileID: 891040177}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &522485975
 Mesh:
   m_ObjectHideFlags: 0
@@ -528,7 +528,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618447081}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 317.916, y: -183.4, z: -0.8508}
+  m_LocalPosition: {x: 317.916, y: -304.46826, z: -0.8508}
   m_LocalScale: {x: 284.7786, y: 271.62842, z: 40}
   m_Children: []
   m_Father: {fileID: 1053412451}
@@ -626,34 +626,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!21 &754071743
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Beach_CityMaterial
-
-    14662'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 537162a2da0a4ee1b3ef4e224d05f6e9, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &773173251
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,7 +685,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876750479}
-  m_Mesh: {fileID: 483637688}
+  m_Mesh: {fileID: 207892729}
 --- !u!23 &876750481
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -732,7 +704,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 754071743}
+  - {fileID: 1459517549}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1337,10 +1309,11 @@ MonoBehaviour:
   topRight: {fileID: 1965417656}
   bottomLeft: {fileID: 1311424336}
   bottomRight: {fileID: 618447082}
-  gemBottomPosition: {fileID: 891040177}
+  gemBottomPosition: {fileID: 773173252}
   gem: {fileID: 8325885898233122717, guid: 56a7f5903ce244e48b26bf7f719494d3, type: 3}
-  speed: 4
-  t: 2
+  speed: 3
+  timeTaken: 3
+  timeMoved: 0
   posStart: {fileID: 773173252}
 --- !u!114 &1053412453
 MonoBehaviour:
@@ -1378,7 +1351,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311424335}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -317.51053, y: -176.6, z: -0.21079987}
+  m_LocalPosition: {x: -317.51053, y: -306.39685, z: -0.21079987}
   m_LocalScale: {x: 284.7786, y: 271.62842, z: 40}
   m_Children: []
   m_Father: {fileID: 1053412451}
@@ -1547,6 +1520,34 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!21 &1459517549
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Beach_CityMaterial
+
+    14660'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 537162a2da0a4ee1b3ef4e224d05f6e9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1965417655
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,7 +1572,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965417655}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 311.6, y: 444, z: -0.12}
+  m_LocalPosition: {x: 312.02112, y: 373.8, z: 0.029200017}
   m_LocalScale: {x: 284.7786, y: 271.62842, z: 40}
   m_Children: []
   m_Father: {fileID: 1053412451}
@@ -1601,7 +1602,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121540627}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -316.91245, y: 431, z: -0.05880028}
+  m_LocalPosition: {x: -316.91245, y: 373, z: -0.05880028}
   m_LocalScale: {x: 284.7786, y: 271.62842, z: 40}
   m_Children: []
   m_Father: {fileID: 1053412451}
