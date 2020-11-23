@@ -613,7 +613,7 @@ MonoBehaviour:
   contentTwo: 
   contentTwoIcon: {fileID: 21300000, guid: 0702598b606d0a647b2fcf20d6c46077, type: 3}
   contentThree: 
-  contentThreeIcon: {fileID: 21300000, guid: b357708712ecbb344a796c3480256266, type: 3}
+  contentThreeIcon: {fileID: 21300000, guid: 393150e28fc65b440bda5232695a049c, type: 3}
   textComponent: {fileID: 0}
   imageComponent: {fileID: 1755933013}
 --- !u!4 &695668414
@@ -2149,7 +2149,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -189, y: 29}
+  m_AnchoredPosition: {x: -189, y: 77}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1799665456

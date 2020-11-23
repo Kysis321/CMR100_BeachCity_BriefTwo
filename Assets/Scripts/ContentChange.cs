@@ -23,18 +23,18 @@ public class ContentChange : MonoBehaviour
     
     public void ChangeToContentOne()
     {
-        textComponent.text = contentOne; // set our text to our text content
+        //textComponent.text = contentOne; // set our text to our text content
         imageComponent.sprite = contentOneIcon; // set our icon to our content sprite
     }
 
     public void ChangeToContentTwo()
     {
-        textComponent.text = contentTwo; // set our text to our text content
+        //textComponent.text = contentTwo; // set our text to our text content
         imageComponent.sprite = contentTwoIcon; // set our icon to our content sprite
     }
     public void ChangeToContentThree()
     {
-        textComponent.text = contentThree; // set our text to our text content
+        //textComponent.text = contentThree; // set our text to our text content
         imageComponent.sprite = contentThreeIcon; // set our icon to our content sprite
     }
 }
