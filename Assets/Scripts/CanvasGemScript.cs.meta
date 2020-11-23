@@ -3,7 +3,14 @@ guid: 262a98860bd2a7a428dda2de7ce16866
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - topLeft: {instanceID: 0}
+  - topRight: {instanceID: 0}
+  - bottomLeft: {instanceID: 0}
+  - bottomRight: {instanceID: 0}
+  - gemBottomPosition: {instanceID: 0}
+  - gem: {fileID: 8325885898233122717, guid: 56a7f5903ce244e48b26bf7f719494d3, type: 3}
+  - posStart: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
