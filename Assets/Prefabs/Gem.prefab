@@ -568,7 +568,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 443c678358c7f6246b8b4cde692a5315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gem: {fileID: 0}
   ySpinSpeed: 2
+  speeding: 0
 --- !u!1 &8325885898233122717
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,6 +580,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8325885898233122716}
+  - component: {fileID: 1088270293}
+  - component: {fileID: 1088270294}
   m_Layer: 0
   m_Name: Gem
   m_TagString: Untagged
@@ -600,6 +604,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1088270293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325885898233122717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 443c678358c7f6246b8b4cde692a5315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gem: {fileID: 8441836904394124568}
+  ySpinSpeed: 2
+  speeding: 0
+--- !u!114 &1088270294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8325885898233122717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 262a98860bd2a7a428dda2de7ce16866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topLeft: {fileID: 0}
+  topRight: {fileID: 0}
+  bottomLeft: {fileID: 0}
+  bottomRight: {fileID: 0}
+  gemBottomPosition: {fileID: 0}
+  gem: {fileID: 8325885898233122717}
+  speed: 1
+  t: 0
+  posStart: {fileID: 1472072503617889706}
 --- !u!1 &8325885898570358366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,12 +1203,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8325885898570358366}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 443c678358c7f6246b8b4cde692a5315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gem: {fileID: 0}
   ySpinSpeed: 2
+  speeding: 0
 --- !u!1 &8325885898762610720
 GameObject:
   m_ObjectHideFlags: 0

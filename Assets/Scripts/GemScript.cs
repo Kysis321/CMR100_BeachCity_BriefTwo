@@ -12,6 +12,7 @@ public class GemScript : MonoBehaviour
     private Vector3 nextPos;
     public float Speed;
     public float ySpeed;
+   
 
 
     [SerializeField]
@@ -65,8 +66,7 @@ public class GemScript : MonoBehaviour
         nextPos = nextPos != posA ? posA : posB;
     }
 
-
-
+    
 
 
 }
