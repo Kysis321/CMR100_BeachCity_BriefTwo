@@ -570,7 +570,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gem: {fileID: 0}
   ySpinSpeed: 2
-  speeding: 0
 --- !u!1 &8325885898233122717
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,7 +597,7 @@ Transform:
   m_GameObject: {fileID: 8325885898233122717}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.37, y: -0.118, z: -0.417}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1472072503617889706}
   m_Father: {fileID: 0}
@@ -618,7 +617,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gem: {fileID: 8441836904394124568}
   ySpinSpeed: 2
-  speeding: 0
 --- !u!114 &1088270294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,7 +635,7 @@ MonoBehaviour:
   bottomRight: {fileID: 0}
   gemBottomPosition: {fileID: 0}
   gem: {fileID: 8325885898233122717}
-  speed: 1
+  speed: 150
   t: 0
   posStart: {fileID: 1472072503617889706}
 --- !u!1 &8325885898570358366
@@ -1210,7 +1208,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gem: {fileID: 0}
   ySpinSpeed: 2
-  speeding: 0
 --- !u!1 &8325885898762610720
 GameObject:
   m_ObjectHideFlags: 0

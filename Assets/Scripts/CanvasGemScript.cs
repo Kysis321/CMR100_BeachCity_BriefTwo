@@ -11,6 +11,7 @@ public class CanvasGemScript : MonoBehaviour
     public GameObject gem;
     public float speed;
     public float t;
+    public float moveSpeed = 3f;
     
 
 
@@ -54,19 +55,19 @@ private void CanvasGem()
     {
         Vector3 a = gem1.transform.position;
         Vector3 b = topLeft.position;
-        gem1.transform.position = Vector3.MoveTowards(a, Vector3.Lerp(a, b, t), Time.deltaTime);
+        gem1.transform.position = Vector3.MoveTowards(a, Vector3.Lerp(a, b, t), Time.deltaTime*3);
 
         Vector3 c = gem2.transform.position;
         Vector3 d = topRight.position;
-        gem2.transform.position = Vector3.MoveTowards(c, Vector3.Lerp(c, d, t), Time.deltaTime);
+        gem2.transform.position = Vector3.MoveTowards(c, Vector3.Lerp(c, d, t), Time.deltaTime*3);
 
         Vector3 e = gem3.transform.position;
         Vector3 f = bottomLeft.position;
-        gem3.transform.position = Vector3.MoveTowards(e, Vector3.Lerp(e, f, t), Time.deltaTime);
+        gem3.transform.position = Vector3.MoveTowards(e, Vector3.Lerp(e, f, t), Time.deltaTime*3);
 
         Vector3 g = gem4.transform.position;
         Vector3 h = bottomRight.position;
-        gem4.transform.position = Vector3.MoveTowards(g, Vector3.Lerp(g, h, t), Time.deltaTime);
+        gem4.transform.position = Vector3.MoveTowards(g, Vector3.Lerp(g, h, t), Time.deltaTime*3);
 
         //    if (timeMoved < 6f)
         //    {
