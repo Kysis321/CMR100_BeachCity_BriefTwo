@@ -8,17 +8,25 @@ public class VanMove : MonoBehaviour
     [SerializeField]
     public Transform vanEnd;
     [SerializeField]
-    public Transform vanStart;
+    public Transform vanCarridge;
     [SerializeField]
     public Transform parentObject;
+    [SerializeField]
+    public Transform vanStartPos;
 
-    private Vector3 posB;
-    private Vector3 posA;
-    private Vector3 nextPos;
-    public float Speed = 4;
+    public float Speed = 1f;
     public AudioSource audioSource;
-    public float t;
-    public GameObject imageVan;
+    public float t = 1f;
+    [SerializeField]
+    public Vector3 vanBeginPos;
+    [SerializeField]
+    public Vector3 vanEndPos;
+    public bool helpWanted = false;
+
+    //below for audio related
+    public int numberofrepeats = 5;
+    public AudioClip mayorDew;
+    public float initialDelay = 2;
 
 
 
@@ -33,18 +41,52 @@ public class VanMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        if (helpWanted == true)
+        {
+            VanMovement();
+        }
+
+
+
     }
-
-
+    public void StateChange()
+    {
+        helpWanted = true;
+        vanCarridge.transform.position = vanStartPos.transform.position;
+    }
     public void VanMovement()
     {
-        Vector3 start = vanStart.position;
-        Vector3 end = vanEnd.position;
-        vanImage.transform.position = Vector3.MoveTowards(start, Vector3.Lerp(start, end, t), Time.deltaTime);
         
-        audioSource.Play();
+        vanBeginPos = vanCarridge.transform.position;
+        vanEndPos = vanEnd.transform.position;
+
         
+
+        vanCarridge.transform.position = Vector3.MoveTowards(vanBeginPos, Vector3.Lerp(vanBeginPos, vanEndPos, 10000),Speed *Time.deltaTime);
+        
+
+
+        
+
+    }
+    public void DewStart()
+    {
+        StartCoroutine(DeweyAudio(5));
+    }
+
+    IEnumerator DeweyAudio(int times)
+    {
+        
+        for (int i=0; i<times; i++)
+        {
+            audioSource.PlayOneShot(mayorDew);
+            yield return new WaitForSeconds(mayorDew.length);
+        }
+        helpWanted = false;
+        
+
+
 
     }
 

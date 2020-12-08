@@ -4,7 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ContentChange : MonoBehaviour
-{ 
+{
+    public string contentStart; // first text content
+    public Sprite contentStartIcon; // first contentIcon
+
     public string contentOne; // first text content
     public Sprite contentOneIcon; // first contentIcon
     public string contentTwo; // second text content
@@ -18,9 +21,14 @@ public class ContentChange : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ChangeToContentOne();
+        ChangeToStart();
     }
-    
+
+    public void ChangeToStart()
+    {
+        //textComponent.text = contentOne; // set our text to our text content
+        imageComponent.sprite = contentStartIcon; // set our icon to our content sprite
+    }
     public void ChangeToContentOne()
     {
         //textComponent.text = contentOne; // set our text to our text content
